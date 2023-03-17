@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: blue;
+        font-family: Arial, Helvetica, sans-serif;
+        color: aliceblue;
+    }
+</style>
+<body>
+    <h1>
+        Olá Mundo!
+    </h1>
+    <script>
+        var nome= prompt ('digite seu nome')
+        var idade= prompt('digite sua idade')
+        var salario= prompt ('digite seu salario')
+        alert(`seu nome é ${nome.toUpperCase()} sua idade é ${idade} seu salario ${salario.toLocaleString('pt-br',{style:'currency',currency:'BRL'})}`)// codigo para mostrar cotação em reais 
+        document.write(`seu nome:${nome}<br/>sua idade:${idade}<br/>seu salario:${salario}`)// codigo para aparecer direto na pagina
+    </script>
+</body>
+</html>
