@@ -15,13 +15,20 @@
     </style>
 </head>
 <body>
-    <h1 class="h">Iniciando estudos DOM</h1>
-    <p>aqui vai o resultado</p>
+    <h1>iniciando estudos DOM</h1>
+    <p id="p1">aqui vai o resultado</p>
     <p>apredendo a usar o <strong>DOM</strong> em javaScript</p>
-    <div>Clique em mim</div>
+    <div class="click">Clique em mim</div>
     <script>
-        var h = window.document.getElementById('h1')[0]
+        var h = window.document.getElementsByTagName('h1')[0]
         h.style.color = 'black'
+
+        var msg = document.getElementById('p1')
+        p1.style.background='black'
+
+        var clip = window.document.querySelector('div.click')
+        clip.style.background= 'black'
+        
     </script>
 </body>
 </html>
